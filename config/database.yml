@@ -81,9 +81,11 @@ test:
 production:
   primary: &primary_production
     <<: *default
-    database: mysite_production
     username: mysite
-    password: <%= ENV["MYSITE_DATABASE_PASSWORD"] %>
+    database: mysite_lwa6
+    password: zzOpIE1VgrezStvDtWGUlLoOUTfNdoR4
+    host: dpg-ctrm603qf0us73dgsqc0-a.oregon-postgres.render.com
+    port: 5432
   cache:
     <<: *primary_production
     database: mysite_production_cache
